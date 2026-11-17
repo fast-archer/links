@@ -18,37 +18,50 @@
 :root{--ln:#1c2026;--mu:#8a9099;--mo:'JetBrains Mono',ui-monospace,Consolas,monospace;--hd:'Unbounded','Arial Black',sans-serif}
 *{box-sizing:border-box}
 html,body{background:#000;color:#fff;margin:0}
-body{font-family:var(--mo);min-height:100vh;display:flex;justify-content:center;align-items:center;padding:28px 16px;overflow-x:hidden}
-.wrap{width:100%;max-width:420px}
-.lab{font-size:11px;letter-spacing:.2em;color:var(--mu);text-transform:uppercase;margin:0 0 12px}
-h1{font-family:var(--hd);font-weight:800;font-size:clamp(24px,7vw,34px);letter-spacing:.02em;margin:0 0 6px;line-height:1.05}
-.sub{font-size:12px;letter-spacing:.14em;color:#b8bec7;margin:0 0 30px;text-transform:uppercase}
-.sec{margin:26px 0 10px}
+body{font-family:var(--mo);min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;padding:32px 16px 20px}
+main{flex:1;width:100%;max-width:420px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px 0}
+.profile{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:26px}
+.avatar{width:96px;height:96px;object-fit:cover;border:1px solid #fff;filter:grayscale(.3)}
+.name{display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--hd);font-weight:800;font-size:clamp(20px,6vw,28px);margin:0;letter-spacing:.02em}
+.check{width:18px;height:18px;flex-shrink:0}
+.tag{font-size:11px;letter-spacing:.14em;color:#b8bec7;text-transform:uppercase;margin:0}
+.lab{font-size:11px;letter-spacing:.2em;color:var(--mu);text-transform:uppercase;margin:22px 0 10px;width:100%;text-align:left}
+.links{width:100%;display:flex;flex-direction:column}
 .link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;margin-bottom:10px;background:#050608;border:1px solid var(--ln);color:#fff;text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;transition:background .3s ease,color .3s ease,border-color .3s ease}
 .link:hover,.link:focus-visible{background:#fff;color:#000;border-color:#fff;outline:none}
 .link.primary{border-color:#fff}
 .link .arr{opacity:.5;font-size:14px}
 .link:hover .arr{opacity:1}
-footer{margin-top:34px;font-size:10px;letter-spacing:.14em;color:var(--mu);text-align:center;text-transform:uppercase}
+footer{width:100%;max-width:420px;text-align:center;font-size:10px;letter-spacing:.14em;color:var(--mu);text-transform:uppercase;padding-top:20px}
 </style>
 </head>
 <body>
-<main class="wrap">
-  <p class="lab">SYS.LINKS</p>
-  <h1>WEIRD SCARS</h1>
-  <p class="sub">Electro-Darkwave / Post-Witch House</p>
+<main>
+  <header class="profile">
+    <img class="avatar" src="assets/avatar.webp" alt="WEIRD SCARS" onerror="this.style.display='none'">
+    <h1 class="name">WEIRD SCARS
+      <svg class="check" viewBox="0 0 24 24" role="img" aria-label="Verified"><circle cx="12" cy="12" r="11" fill="#fff"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="square"/></svg>
+    </h1>
+    <p class="tag">Electro-Darkwave / Post-Witch House</p>
+  </header>
 
-  <p class="lab sec">Listen</p>
-  <a class="link primary" href="https://band.link/amuart" target="_blank" rel="noopener"><span class="t">TRAUMA · pre-save</span><span class="arr">&rarr;</span></a>
-  <a class="link" href="https://open.spotify.com/artist/3WEdQL1RspwjtFcIFVdied" target="_blank" rel="noopener"><span class="t">Spotify</span><span class="arr">&rarr;</span></a>
-  <a class="link" href="https://music.apple.com/kz/artist/1858673938" target="_blank" rel="noopener"><span class="t">Apple Music</span><span class="arr">&rarr;</span></a>
-  <a class="link" href="https://soundcloud.com/weirdscars" target="_blank" rel="noopener"><span class="t">SoundCloud</span><span class="arr">&rarr;</span></a>
+  <p class="lab">Listen</p>
+  <nav class="links" aria-label="Listen">
+    <a class="link primary" href="https://band.link/amuart" target="_blank" rel="noopener"><span class="t">TRAUMA · listen now</span><span class="arr">&rarr;</span></a>
+    <a class="link" href="https://open.spotify.com/artist/3WEdQL1RspwjtFcIFVdied" target="_blank" rel="noopener"><span class="t">Spotify</span><span class="arr">&rarr;</span></a>
+    <a class="link" href="https://music.apple.com/kz/artist/1858673938" target="_blank" rel="noopener"><span class="t">Apple Music</span><span class="arr">&rarr;</span></a>
+    <a class="link" href="https://soundcloud.com/weirdscars" target="_blank" rel="noopener"><span class="t">SoundCloud</span><span class="arr">&rarr;</span></a>
+  </nav>
 
-  <p class="lab sec">Follow</p>
-  <a class="link" href="https://t.me/weird_scars" target="_blank" rel="noopener"><span class="t">Telegram</span><span class="arr">&rarr;</span></a>
+  <p class="lab">Follow</p>
+  <nav class="links" aria-label="Follow">
+    <a class="link" href="https://t.me/weird_scars" target="_blank" rel="noopener"><span class="t">Telegram</span><span class="arr">&rarr;</span></a>
+  </nav>
 
-  <p class="lab sec">Site</p>
-  <a class="link" href="https://weirdscars.com" target="_blank" rel="noopener"><span class="t">Main site</span><span class="arr">&rarr;</span></a>
+  <p class="lab">Site</p>
+  <nav class="links" aria-label="Site">
+    <a class="link" href="https://weirdscars.com" target="_blank" rel="noopener"><span class="t">Main site</span><span class="arr">&rarr;</span></a>
+  </nav>
 </main>
 <footer>&copy; 2026 WEIRD SCARS &middot; no tracking</footer>
 <script>
@@ -56,7 +69,7 @@ footer{margin-top:34px;font-size:10px;letter-spacing:.14em;color:var(--mu);text-
   if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
   const G='01ABCDEF#%&*<>/';
   document.querySelectorAll('.link').forEach(a=>{
-    const el=a.querySelector('.t');const o=el.textContent;
+    const el=a.querySelector('.t');if(!el)return;const o=el.textContent;
     a.addEventListener('pointerenter',()=>{
       let k=0;clearInterval(a._s);
       a._s=setInterval(()=>{el.textContent=[...o].map((c,i)=>c===' '||i<k?c:G[Math.random()*G.length|0]).join('');k+=.6;if(k>o.length){clearInterval(a._s);el.textContent=o}},28);
