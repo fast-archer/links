@@ -4,65 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; base-uri 'self'; form-action 'none'; object-src 'none'">
 <title>WEIRD SCARS — LINKS</title>
 <meta name="description" content="WEIRD SCARS. Music, releases and links in one place.">
 <meta property="og:title" content="WEIRD SCARS — LINKS">
 <meta property="og:description" content="Electro-Darkwave / Post-Witch House. Kostanay, KZ.">
 <meta property="og:url" content="https://links.weirdscars.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://weirdscars.com/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{--ln:#1c2026;--mu:#8a9099;--mo:'JetBrains Mono',ui-monospace,Consolas,monospace;--hd:'Unbounded','Arial Black',sans-serif}
-*{box-sizing:border-box}
-html,body{background:#000;color:#fff;margin:0}
-body{font-family:var(--mo);min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;padding:32px 16px 20px}
-main{flex:1;width:100%;max-width:420px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px 0}
-.profile{display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:26px}
-.avatar{width:96px;height:96px;object-fit:cover;border:1px solid #fff;filter:grayscale(.3)}
-.name{display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--hd);font-weight:800;font-size:clamp(20px,6vw,28px);margin:0;letter-spacing:.02em}
-.check{width:18px;height:18px;flex-shrink:0}
-.tag{font-size:11px;letter-spacing:.14em;color:#b8bec7;text-transform:uppercase;margin:0}
-.lab{font-size:11px;letter-spacing:.2em;color:var(--mu);text-transform:uppercase;margin:22px 0 10px;width:100%;text-align:left}
-.links{width:100%;display:flex;flex-direction:column}
-.link{position:relative;display:flex;align-items:center;gap:10px;padding:16px 18px;margin-bottom:10px;background:#050608;border:1px solid var(--ln);color:#fff;text-decoration:none;font-size:13px;letter-spacing:.12em;text-transform:uppercase;transition:background .3s ease,color .3s ease,border-color .3s ease;overflow:hidden}
-.link .pre{color:var(--mu);flex-shrink:0}
-.link .t{flex:1;text-align:left}
-.link .d{font-size:10px;letter-spacing:.06em;text-transform:none;color:var(--mu);white-space:nowrap}
-.link .cur{opacity:0;margin-left:-6px}
-.link:hover .cur,.link:focus-visible .cur{opacity:1;animation:blink 1s steps(1) infinite}
-@keyframes blink{50%{opacity:0}}
-.link .scan{position:absolute;top:0;bottom:0;left:-40%;width:30%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent);opacity:0;pointer-events:none}
-.link:hover .scan{animation:scanx .4s ease-out 1}
-@keyframes scanx{0%{left:-40%;opacity:1}100%{left:110%;opacity:0}}
-.link::before,.link::after{content:"";position:absolute;width:14px;height:14px;border:0 solid rgba(255,255,255,.4);pointer-events:none;transition:border-color .3s ease}
-.link::before{top:0;left:0;border-top-width:1px;border-left-width:1px}
-.link::after{bottom:0;right:0;border-bottom-width:1px;border-right-width:1px}
-.link:hover{background:#fff;color:#000;border-color:#fff}
-.link:hover .pre,.link:hover .d{color:rgba(0,0,0,.6)}
-.link:hover .scan{background:linear-gradient(90deg,transparent,rgba(0,0,0,.12),transparent)}
-.link:hover::before,.link:hover::after{border-color:rgba(0,0,0,.55)}
-.link.primary{border-color:#fff}
-/* microchip pattern: 40px grid with square pads at the intersections, 6% opacity, slow drift (transform only) */
-body::before{content:"";position:fixed;left:0;right:0;top:-40px;bottom:0;pointer-events:none;z-index:0;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M0 .5H40M.5 0V40' stroke='%23fff' stroke-width='1' fill='none'/%3E%3Crect x='0' y='0' width='4' height='4' fill='%23fff'/%3E%3C/svg%3E");animation:chipDrift 20s linear infinite}
-@keyframes chipDrift{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,40px,0)}}
-main,footer{position:relative;z-index:1}
-@media (prefers-reduced-motion:reduce){body::before{animation:none}.link .cur,.link .scan{animation:none}}
-footer{width:100%;max-width:420px;text-align:center;font-size:10px;letter-spacing:.14em;color:var(--mu);text-transform:uppercase;padding-top:20px}
-.check .hl{stroke-dasharray:14 86;stroke-dashoffset:100;opacity:0;filter:drop-shadow(0 0 3px #fff)}
-.check.sh .hl{animation:sweep 1.1s ease-out 1}
-@keyframes sweep{0%{stroke-dashoffset:100;opacity:0}15%{opacity:1}85%{opacity:1}100%{stroke-dashoffset:-14;opacity:0}}
-@media (prefers-reduced-motion:reduce){.check.sh .hl{animation:none}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
   <header class="profile">
-    <img class="avatar" src="assets/avatar.webp" alt="WEIRD SCARS" onerror="this.style.display='none'">
+    <img class="avatar" src="assets/avatar.webp" alt="WEIRD SCARS">
     <h1 class="name">WEIRD SCARS
-      <svg class="check" viewBox="0 0 24 24" role="img" aria-label="WEIRD SCARS"><path d="M4.5 12.8L9.6 18L19.6 6.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="butt" stroke-linejoin="miter"/><path class="hl" pathLength="100" d="M4.5 12.8L9.6 18L19.6 6.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="butt" stroke-linejoin="miter"/></svg>
+      <svg class="check" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 12.8L9.6 18L19.6 6.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="butt" stroke-linejoin="miter"/><path class="hl" pathLength="100" d="M4.5 12.8L9.6 18L19.6 6.6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="butt" stroke-linejoin="miter"/></svg>
     </h1>
     <p class="tag">Electro-Darkwave / Post-Witch House</p>
   </header>
@@ -86,25 +45,6 @@ footer{width:100%;max-width:420px;text-align:center;font-size:10px;letter-spacin
   </nav>
 </main>
 <footer>&copy; 2026 WEIRD SCARS &middot; no tracking</footer>
-<script>
-(()=>{
-  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  const G='01ABCDEF#%&*<>/';
-  document.querySelectorAll('.link').forEach(a=>{
-    const el=a.querySelector('.t');if(!el)return;const o=el.textContent;
-    a.addEventListener('pointerenter',()=>{
-      let k=0;clearInterval(a._s);
-      a._s=setInterval(()=>{el.textContent=[...o].map((c,i)=>c===' '||i<k?c:G[Math.random()*G.length|0]).join('');k+=.6;if(k>o.length){clearInterval(a._s);el.textContent=o}},28);
-    });
-  });
-})();
-</script>
-<script>
-(()=>{
-  const c=document.querySelector('.check');if(!c||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  const run=()=>{c.classList.add('sh');setTimeout(()=>c.classList.remove('sh'),1200);setTimeout(run,60000+Math.random()*120000)};
-  setTimeout(run,20000);
-})();
-</script>
+<script src="app.js"></script>
 </body>
 </html>
